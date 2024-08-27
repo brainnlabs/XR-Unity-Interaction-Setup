@@ -15,6 +15,9 @@ Youtube Video:
 
 In real-world physics, a rigid body is any physical body that does not deform or change shape under physics forces. The distance between any two given points of a rigid body remains constant in time, regardless of external forces exerted on it. To simulate physics-based behavior such as movement, collision, and joints, you need to configure items in your scene as rigid bodies.
 
+ Rigidbody component provides a physics-based way to control the movement and position of a GameObject. Instead of the Transform properties, you can use simulated physics forces and torque to move the GameObject, and let the physics engine
+ calculate the results.
+
 ---
 
 
