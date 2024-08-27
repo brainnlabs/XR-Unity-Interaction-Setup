@@ -22,6 +22,8 @@ In real-world physics, a rigid body is any physical body that does not deform or
 
 Unity handles physics-based movement globally, not locally. When a GameObject with a Rigidbody moves via physics-based movement, it moves independently of any parent or child GameObject. A child GameObject that has a Rigidbody still uses its parent GameObject to define its local position for initialization, but Unity calculates its physics-based movement in global space.
 
+To control a Rigidbody via script, the primary classes are AddForce (to add forces to a GameObject) and AddTorque (to apply torque to a GameObject).
+
 ---
 
 
