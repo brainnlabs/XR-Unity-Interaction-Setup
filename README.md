@@ -1,14 +1,13 @@
-# URP-Oculus-Integration-
-Adaptation of URP for Oculus Quest in Unity
+# -Interactions-
+How to add interaction in Oculus Quest for Unity
 
 ---
 
-# Resources
+# Camera
 
-Youtube Video:
-
-[2020, TensorFlow 2.2 NVIDIA GPU (CUDA)/CPU, Keras, & Python 3.7 in Linux Ubuntu](https://www.youtube.com/watch?v=dj-Jntz-74g&t=357s)
-
+- Add **OVRCameraRig** prefab
+- Go to the *Inspector* -> *OVR Manager (Script)* -> *Tracking* -> *Tracking Origin Type =* ***Floor Level***
+- Go to the *Inspector* -> *OVR Manager (Script)* -> *Quest Features* -> *Hand Tracking Support =* ***Controllers and Hands***
 ---
 
 # Rigidbody
