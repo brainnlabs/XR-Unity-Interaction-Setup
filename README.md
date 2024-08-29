@@ -25,6 +25,8 @@ How to add interaction in Oculus Quest for Unity. The interaction SDK allows to 
   - Duplicate *LeftOVRHand* and call it *RightOVRHand*, set *Hand Type=* **Hand Right** and *Skeleton Type=* **Hand Right**
   - Go to  **OVRCameraRig** -> **TrackingSpace** -> **LeftHandAnchor** and add *LeftOVRHand as its child.
   - Go to  **OVRCameraRig** -> **TrackingSpace** -> **RightHandAnchor** and add *RightOVRHand as its child.
+- Go to **OVRHands** -> *LeftHand* -> *HandInteratorsLeft* and add **HandGrabInteractor** prefab as its child.
+- Go to **OVRHands** -> *RighttHand* -> *HandInteratorsRight* and add **HandGrabInteractor** prefab as its child.
 
 ---
 
