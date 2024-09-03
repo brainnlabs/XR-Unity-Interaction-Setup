@@ -8,14 +8,14 @@ How to add interaction in Oculus Quest for Unity. The interaction SDK allows to 
 - Add **OVRCameraRig** prefab
 - Go to the *Inspector* -> *OVR Manager (Script)* -> *Tracking* -> *Tracking Origin Type =* ***Floor Level***
 - Go to the *Inspector* -> *OVR Manager (Script)* -> *Quest Features* -> *Hand Tracking Support =* ***Controllers and Hands***
+- Add **OVRInteraction** as a child of **OVRCameraRig**
   
 ---
 
-### Interaction #1: *Grab* interactions with **Hands*.
+### Interaction #1: *Grab* interactions with **Hands**.
 
 **Interactor**
 
-- Add **OVRInteraction** as a child of **OVRCameraRig**
 - Add **OVRHands** as a child of **OVRInteraction**
 - Create rendering component for hands:
   
@@ -28,6 +28,35 @@ How to add interaction in Oculus Quest for Unity. The interaction SDK allows to 
  
 - Go to **OVRHands** -> *LeftHand* -> *HandInteratorsLeft* and add **HandGrabInteractor** prefab as its child.
 - Go to **OVRHands** -> *RighttHand* -> *HandInteratorsRight* and add **HandGrabInteractor** prefab as its child.
+
+**Interactable**
+
+- Create new *Game Object*.
+- Add  **Rigidbody** component.
+- Add  **Grabbable** script.
+- Add **Physics Grabbable** script.
+- Add **Hand Grab Interactable**
+
+---
+
+---
+
+### Interaction #2: *Grab* interactions with **ControllerHands**.
+
+**Interactor**
+
+- Add **OVRControllerHands** as a child of **OVRInteraction**
+- Create rendering component for hands:
+  
+  - Create new *Game Object* and name it *LeftOVRHand*
+  - Add *OVR Hand (Script)* and set *Hand Type=* **Hand Left**
+  - Add *OVR Skeleton (Script)* and set *Skeleton Type=* **Hand Left** and set *Update Root Scale=* **True**.
+  - Duplicate *LeftOVRHand* and call it *RightOVRHand*, set *Hand Type=* **Hand Right** and *Skeleton Type=* **Hand Right**
+  - Go to  **OVRCameraRig** -> **TrackingSpace** -> **LeftHandAnchor** and add *LeftOVRHand as its child.
+  - Go to  **OVRCameraRig** -> **TrackingSpace** -> **RightHandAnchor** and add *RightOVRHand as its child.
+ 
+- Go to **OVRControllerHands** -> *LeftControllerHand* -> *ControllerHandInterators* and add **HandGrabInteractor** prefab as its child.
+- Go to **OVRControllerHands** -> *RightControllertHand* -> *ControllerHandInterators* and add **HandGrabInteractor** prefab as its child.
 
 **Interactable**
 
