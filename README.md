@@ -11,7 +11,7 @@ How to add interaction in Oculus Quest for Unity. The interaction SDK allows to 
   
 ---
 
-### Interaction 1: *Grab* interactions with **Hands*.
+### Interaction #1: *Grab* interactions with **Hands*.
 
 **Interactor**
 
