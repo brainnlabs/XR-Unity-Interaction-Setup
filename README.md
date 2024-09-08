@@ -35,7 +35,7 @@ How to add interaction in Oculus Quest for Unity. The interaction SDK allows to 
 - Add  **Rigidbody** component.
 - Add  **Grabbable** script.
 - Add **Physics Grabbable** script.
-- Add **Hand Grab Interactable**
+- Add **Hand Grab Interactable** script.
 
 ---
 
@@ -64,7 +64,7 @@ How to add interaction in Oculus Quest for Unity. The interaction SDK allows to 
 - Add  **Rigidbody** component.
 - Add  **Grabbable** script.
 - Add **Physics Grabbable** script.
-- Add **Hand Grab Interactable**
+- Add **Hand Grab Interactable** script.
 
 ---
 
