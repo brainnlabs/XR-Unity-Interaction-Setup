@@ -18,7 +18,7 @@ Grab interactions allow to use digital hands to interact with digital objects. I
 
 ---
 
-### Interaction #1: *Grab* interactions with **Hands**.
+### Interaction #1: *Grab* interactions with *Hands*.
 
 **Interactor**
 
@@ -46,7 +46,7 @@ Grab interactions allow to use digital hands to interact with digital objects. I
 
 ---
 
-### Interaction #2: *Grab* interactions with **ControllerHands**.
+### Interaction #2: *Grab* interactions with *ControllerHands*.
 
 **Interactor**
 
@@ -73,7 +73,7 @@ Grab interactions allow to use digital hands to interact with digital objects. I
 
 ---
 
-### Interaction #3: *Grab* interactions with **Controllers**.
+### Interaction #3: *Grab* interactions with *Controllers*.
 
 **Interactor**
 
