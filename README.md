@@ -12,6 +12,12 @@ How to add interaction in Oculus Quest for Unity. The interaction SDK allows to 
   
 ---
 
+# -Grab Interactions-
+
+Grab interactions allow to use digital hands to interact with digital objects. In order to render hands real hands can be tracked or a hand is superimposed to controllers.s
+
+---
+
 ### Interaction #1: *Grab* interactions with **Hands**.
 
 **Interactor**
@@ -37,11 +43,62 @@ How to add interaction in Oculus Quest for Unity. The interaction SDK allows to 
 - Add **Physics Grabbable** script.
 - Add **Hand Grab Interactable** script.
 
----
 
 ---
 
 ### Interaction #2: *Grab* interactions with **ControllerHands**.
+
+**Interactor**
+
+- Add **OVRControllerHands** as a child of **OVRInteraction**
+- Create rendering component for hands:
+  
+  - Create new *Game Object* and name it *LeftOVRHand*
+  - Add *OVR Hand (Script)* and set *Hand Type=* **Hand Left**
+  - Add *OVR Skeleton (Script)* and set *Skeleton Type=* **Hand Left** and set *Update Root Scale=* **True**.
+  - Duplicate *LeftOVRHand* and call it *RightOVRHand*, set *Hand Type=* **Hand Right** and *Skeleton Type=* **Hand Right**
+  - Go to  **OVRCameraRig** -> **TrackingSpace** -> **LeftHandAnchor** and add *LeftOVRHand as its child.
+  - Go to  **OVRCameraRig** -> **TrackingSpace** -> **RightHandAnchor** and add *RightOVRHand as its child.
+ 
+- Go to **OVRControllerHands** -> *LeftControllerHand* -> *ControllerHandInterators* and add **HandGrabInteractor** prefab as its child.
+- Go to **OVRControllerHands** -> *RightControllertHand* -> *ControllerHandInterators* and add **HandGrabInteractor** prefab as its child.
+
+**Interactable**
+
+- Create new *Game Object*.
+- Add  **Rigidbody** component.
+- Add  **Grabbable** script.
+- Add **Physics Grabbable** script.
+- Add **Hand Grab Interactable** script.
+
+---
+
+### Interaction #3: *Grab* interactions with **Controllers**.
+
+**Interactor**
+
+- Add **OVRControllers** as a child of **OVRInteraction**
+-  
+- Go to **OVRControllers** -> *LeftController* -> *ControllerInterators* and add **ControllerGrabInteractor** prefab as its child.
+- Go to **OVRControllers** -> *RightController* -> *ControllerInterators* and add **ControllerGrabInteractor** prefab as its child.
+
+**Interactable**
+
+- Create new *Game Object*.
+- Add  **Rigidbody** component.
+- Add  **Grabbable** script.
+- Add **Physics Grabbable** script.
+- Add **Grab Interactable** script.
+  - Drag **Game Object** to **Pointable Element**
+  - Drag **Game Object** to **Rigidbody**
+
+---
+
+
+# Poke Interactions
+---
+
+### Interaction #3: *Poke* interactions with **Controllers**.
 
 **Interactor**
 
