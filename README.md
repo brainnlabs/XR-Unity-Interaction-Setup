@@ -84,13 +84,25 @@ Grab interactions allow to use digital hands to interact with digital objects. I
 
 **Interactable**
 
-- Create new *Game Object*.
-- Add  **Rigidbody** component.
-- Add  **Grabbable** script.
-- Add **Physics Grabbable** script.
-- Add **Grab Interactable** script.
-  - Drag **Game Object** to **Pointable Element**
-  - Drag **Game Object** to **Rigidbody**
+- Create new **Game Object**.
+- Add a Add a *Poke Interactable* script and *Interactable Debug Visual* script.
+- Add a child to **Game Object** and call it *model*,
+- add a child to **model** and call it *Surface.*
+- Add a *Plane Surface* script and *circle surface* script.
+- Click and enable *Double Sided* from the *Plane Surface* script.
+- Drag and Drop *Plane Surface* script to *Plane Surface* box in *Circle Surface* script.
+- Rotate **Surface** game object orientation 90 degrees.
+- Drag **Surface** game object to *Surface Patch* box inside the *Poke Interactable* script.
+- Add another child to **Game Object** and call it *Visual*.
+- Add a *Poke Interactable Visual* script.
+- Add a child to **Visual** and add the object to be rendered, called **Cube**.
+- Drag *Poke Interactable* script to *Poke Interactable* box from *Poke Interactable Visual* script.
+- Drag **Surface** game object to *Button Base Transform* box inside the *Poke Interactable Visual* script.
+
+
+
+
+
 
 ---
 
